@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh dien tich HCN</title>
+</head>
+<body>
+<h1>Tính S hình chữ nhật</h1>
+<label for="chieudai">chieu dai: </label>
+<input type="number" id="chieudai"><br>
+<label for="chieurong">chieu rong: </label>
+<input type="number" id="chieurong"><br>
+<button onclick="tinhdientich()">Tinh S</button>
+<p id="ketqua"></p>
+<script>
+    function tinhdientich() {
+        let chieudai = parseFloat(document.getElementById("chieudai").value);
+        let chieurong = parseFloat(document.getElementById("chieurong").value);
+        let dientich = chieudai * chieurong;
+        document.getElementById("ketqua").innerText =
+            "Dien tich HCN: " + dientich.toFixed(2);
+    }
+</script>
+</body>
+</html>
+
