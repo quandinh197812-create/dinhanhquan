@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diemtrungbinh</title>
+</head>
+<body>
+<script>
+    let Ly = prompt("Nhập điểm Lý:");
+    let Hoa = prompt("Nhập điểm Hóa:");
+    let Sinh = prompt("Nhập điểm Sinh:");
+    Ly = Number(Ly);
+    Hoa = Number(Hoa);
+    Sinh = Number(Sinh);
+    let TB = (Ly + Hoa + Sinh) / 3;
+    let tong = Ly + Hoa + Sinh;
+    alert("Điểm trung bình = " + TB);
+    alert("Tổng điểm = " + tong);
+    document.write("Điểm trung bình = " + TB + "<br>");
+    document.write("Tổng điểm = " + tong + "<br>");
+</script>
+<script>
+    let Celsius = prompt("Nhập nhiệt độ C:");
+    Celsius = Number(Celsius);
+    let Fahrenheit = (Celsius * 1.8) + 32;
+    alert("Độ F = " + Fahrenheit);
+    document.write("Nhiệt độ C ban đầu = " + Celsius + "<br>");
+    document.write("Nhiệt độ C sang F = " + Fahrenheit + "<br>");
+</script>
+<script>
+    let r = prompt("Nhập bán kính:");
+    r = Number(r);
+    let dienTich = Math.PI * r * r;
+    let chuVi = 2 * Math.PI * r;
+    alert("Bán kính = " + r);
+    alert("Diện tích = " + dienTich);
+    alert("Chu vi = " + chuVi);
+    document.write("Bán kính = " + r + "<br>");
+    document.write("Diện tích hình tròn = " + dienTich + "<br>");
+    document.write("Chu vi hình tròn = " + chuVi + "<br>");
+</script>
+</body>
+</html>
