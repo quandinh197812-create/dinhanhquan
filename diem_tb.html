@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính điểm trung bình</title>
+</head>
+<body>
+<h1>Chương trình tính điểm trung bình</h1>
+<label>Điểm Toán: </label>
+<input type="number" id="toan">
+<br>
+<label>Điểm Lý: </label>
+<input type="number" id="ly" >
+<br>
+<label>Điểm Hóa: </label>
+<input type="number" id="hoa">
+<br>
+<button onclick="tinhDiemTB()">Tính điểm trung bình</button>
+<h2 id="ket-qua"></h2>
+<script>
+    function tinhDiemTB() {
+        let toan = parseFloat(document.getElementById("toan").value);
+        let ly = parseFloat(document.getElementById("ly").value);
+        let hoa = parseFloat(document.getElementById("hoa").value);
+        let diemTB = (toan + ly + hoa) / 3;
+        document.write("điểm trung bình: " + diemTB + "<br>");
+    }
+</script>
+</body>
+</html>
