@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính </title>
+</head>
+<body>
+<h1>Máy tính</h1>
+<input type="number" id="so1">
+<input type="number" id="so2">
+<select id="phepTinh">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">*</option>
+    <option value="/">/</option>
+</select>
+<button onclick="tinh()">kết quả</button>
+<h2 id="ketQua"></h2>
+<script>
+    function tinh() {
+        let a = +document.getElementById("so1").value;
+        let b = +document.getElementById("so2").value;
+        let c = document.getElementById("phepTinh").value;
+        let ketQua = eval(a + c + b);
+        document.write("kết quả: " + ketQua + "<br>");
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
