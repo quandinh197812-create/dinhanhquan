@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html LANG="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+</head>
+<body>
+<h2>CASIO</h2>
+<input type="text" id="manHinh">
+<br>
+<button onclick = nhap("7")>7</button>
+<button onclick= nhap("8")>8</button>
+<button onclick= nhap("9")>9</button>
+<button onclick= nhap("/")>/</button>
+<BR>
+<button onclick= nhap("4")>4</button>
+<button onclick= nhap("5")>5</button>
+<button onclick= nhap("6")>6</button>
+<button onclick= nhap("*")>*</button>
+<br>
+<button onclick= nhap("1")>1</button>
+<button onclick= nhap("2")>2</button>
+<button onclick= nhap("3")>3</button>
+<button onclick= nhap("-")>-</button>
+<br>
+<button onclick= nhap("0")>0</button>
+<button onclick= tinh("")>=</button>
+<button onclick= xoa("")>C</button>
+<button onclick= them("+")>+</button>
+<script>
+    function nhap(number) {
+        document.getElementById("manHinh").value+=number;
+    }
+    function tinh() {
+        let A = document.getElementById("manHinh").value;
+        document.getElementById("manHinh").value =eval(A);
+    }
+    function xoa() {
+        document.getElementById("manHinh").value="";
+    }
+</script>
+</body>
+</html>
