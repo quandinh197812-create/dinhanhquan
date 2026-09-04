@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính số ngày trong tháng</title>
+</head>
+<body>
+<h1>Ứng dụng tính số ngày trong tháng</h1>
+<label>nhập tháng 1-12: </label>
+<input type="number" id="thang">
+<button onclick="tinhSoNgay()">Tính số ngày</button>
+<p id="ketQua"></p>
+<script>
+    function tinhSoNgay() {
+        let soNgay;
+        let thang = parseInt(document.getElementById("thang").value);
+        switch (thang) {
+            case 1:
+                soNgay = 31;
+                break;
+            case 2:
+                soNgay = "28 hoặc 29 ";
+                break;
+            case 3:
+                soNgay = "31";
+                break;
+            case 4:
+                soNgay = "30";
+                break;
+            case 5:
+                soNgay = "31";
+                break;
+            case 6:
+                soNgay = "30";
+                break;
+            case 7:
+                soNgay = "31";
+                break;
+            case 8:
+                soNgay = "31";
+                break;
+            case 9:
+                soNgay = "30";
+                break;
+            case 10:
+                soNgay = "31";
+                break;
+            case 11:
+                soNgay = "30";
+                break;
+            case 12:
+                soNgay = "31";
+                break;
+        }
+
+        document.write( "tháng:" + thang +"có:"+  soNgay) ;
+    }
+</script>
+</body>
+</html>
