@@ -1,36 +1,21 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bài 5: Xếp loại học lực</title>
+    <title>Title</title>
 </head>
 <body>
-<h2>Bài 5: Xếp loại học lực</h2>
-<label>Kiểm tra:</label>
-<input type="number" id="kt">
-<label>Giữa kỳ:</label>
-<input type="number" id="gk">
-<label>Cuối kỳ:</label>
-<input type="number" id="ck">
-<button onclick="bai5()">Xếp loại</button>
+<h2>Bài 5: Diện tích tam giác vuông</h2>
+<input type="number" id="nhapA" >
+<input type="number" id="nhapB" >
+<button onclick="tinh5()">Tính</button>
 <p id="ketqua"></p>
 <script>
-    function bai5() {
-        let kt = document.getElementById("kt").value;
-        let gk = document.getElementById("gk").value;
-        let ck = document.getElementById("ck").value;
-        let dtb = (kt + gk * 2 + ck * 3) / 6;
-        let kq;
-        if (dtb >= 8) {
-            kq = "Học lực Giỏi";
-        } else if (dtb >= 6.5) {
-            kq = "Học lực Khá";
-        } else if (dtb >= 5) {
-            kq = "Học lực Trung bình";
-        } else {
-            kq = "Học lực Yếu";
-        }
-        document.write("xếp loại:"+dtb+"kết quả"+kq+"<br>");
+    function tinh5() {
+        let a = +document.getElementById("nhapA").value;
+        let b = +document.getElementById("nhapB").value;
+        let c = (a * b)/2;
+        document.write("ket qua:" + c + "<br>")
     }
 </script>
 </body>

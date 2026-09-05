@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập JavaScript</title>
+</head>
+<body>
+<h2>Bài 1: Đổi °C sang °F</h2>
+<input type="number" id="celsius">
+<button onclick="tinh1()">Đổi</button>
+<p id="ketqua"></p>
+<script>
+    function tinh1() {
+        let c =document.getElementById("celsius").value;
+        let f = c * 9 / 5 + 32;
+        document.write("ket qua:" + f + "<br>")
+    }
+</script>
+</body>
+</html>

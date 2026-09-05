@@ -5,23 +5,17 @@
     <title>Title</title>
 </head>
 <body>
-<h2>Bài 4: Tìm số lớn nhất trong 3 số</h2>
-<input type="number" id="x">
-<input type="number" id="y">
-<input type="number" id="z">
-<button onclick="bai4()">Tìm max</button>
+<h2>Bài 4: Diện tích hình chữ nhật</h2>
+<input type="number" id="nhapA" >
+<input type="number" id="nhapB" >
+<button onclick="tinh4()">Tính</button>
 <p id="ketqua"></p>
 <script>
-    function bai4() {
-        let x = document.getElementById("x").value;
-        let y = document.getElementById("y").value;
-        let z = document.getElementById("z").value;
-        let max = x;
-        if (y > max)
-            max = y;
-        if (z > max)
-            max = z;
-        document.write("giá trị max: " + max);
+    function tinh4() {
+        let a = document.getElementById("nhapA").value;
+        let b = document.getElementById("nhapB").value;
+        let c = a * b;
+        document.write("ket qua:" + c + "<br>")
     }
 </script>
 </body>

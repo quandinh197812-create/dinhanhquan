@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Bài 2: Đổi mét sang feet</h2>
+<input type="number" id="met" >
+<button onclick="doi()">Đổi</button>
+<p id="ketqua"></p>
+<script>
+    function doi() {
+        let m =document.getElementById("met").value;
+        let ft = m * 3*2808;
+        document.write("ket qua:" + ft + "<br>")
+    }
+</script>
+</body>
+</html>
