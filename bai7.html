@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Bài 7: Giải phương trình bậc 2 (ax^2 + bx + c = 0)</h2>
+<input type="number" id="a2" >
+<input type="number" id="b2" >
+<input type="number" id="c2" >
+<button onclick="phuongTrinh()">Giải</button>
+<p id="ketqua"></p>
+<script>
+    function phuongTrinh() {
+        let a = +document.getElementById("a2").value;
+        let b = +document.getElementById("b2").value;
+        let c =+document.getElementById("c2").value;
+        let denta=b*b-a*c;
+        if(a  == 0 ){
+            document.write("đây là pt bâc 1");
+        }
+        else if(denta<0){
+            document.write("pt vô nghiêm");
+        }
+        else if(denta == 0){
+            let x=-b/2*a;
+            document.write("pt có nghiệm x=");
+        }
+    }
+</script>
+</body>
+</html>
