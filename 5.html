@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bài 4</title>
+    <title>Bài 5</title>
 </head>
 <body>
 <script>
     let n1 = 0, n2 = 1, sotiepTheo;
-    while (true) {
+    let tong = n1 + n2;
+    let count = 2;
+    while (count < 20) {
         sotiepTheo = n1 + n2;
+        tong += sotiepTheo;
         n1 = n2;
         n2 = sotiepTheo;
-        if (n1 % 5 === 0) {
-            document.write("Số đầu tiên trong dãy Fibonacci chia hết cho 5 à: " + n1);
-            break;
-        }
+        count++;
     }
+    document.write("Tổng của 20 số đầu tiên trong dãy Fibonacci là: " + tong);
 </script>
 </body>
 </html>
-
