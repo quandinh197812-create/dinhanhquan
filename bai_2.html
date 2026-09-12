@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<h2>Tìm số lớn nhất</h2>
+<script>
+    let numbers = [12, 5, 23, 7, 45, 19, 30, 8, 14, 30];
+    let maxValue = numbers[0];
+    let maxIndex = 0;
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > maxValue) {
+            maxValue = numbers[i];
+            maxIndex = i;
+        }
+    }
+    console.log("Phần tử lớn nhất là: " + maxValue);
+    console.log("Vị trí của phần tử đó trong mảng là: " + maxIndex);
+</script>
+</body>
+</html>

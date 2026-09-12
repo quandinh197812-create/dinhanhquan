@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển Anh - Việt</title>
+</head>
+<body>
+<h2>Từ điển Anh - Việt</h2>
+<input type="text" id="wordInput" placeholder="Nhập từ tiếng Anh">
+<button onclick="Word()">tra cứu</button>
+<p id="result"></p>
+<script>
+    let englishWords = ["hello", "world", "computer", "book", "red", "green", "black"];
+    let vietnameseWords = ["xin chào", "thế giới", "máy tính", "sách", "màu đỏ", "màu xanh", "màu đen"];
+    function Word() {
+        let input = document.getElementById("wordInput").value.toLowerCase();
+        let index = englishWords.indexOf(input);
+        if (index !== -1) {
+            document.getElementById("result").innerText = "Nghĩa tiếng Việt: " + vietnameseWords[index];
+        } else {
+            document.getElementById("result").innerText = "Không tìm thấy từ '" + input + "'";
+        }
+    }
+</script>
+</body>
+</html>
+
