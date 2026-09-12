@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +7,28 @@
 </head>
 <body>
 <script>
-var a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
-for (var i in a) {
-console.log("row " + i);
-for (var j in a[i]) {
-console.log(" " + a[i][j]);
-}
-}
+    myColor = ["Red", "Green", "White", "Black"];
+    console.log(myColor.toString());
+    console.log(myColor.join());
+    console.log(myColor.join('+'));
+</script>
+<script>
+    var num = window.prompt();
+    var str = num.toString();
+    var result = [str[0]];
+    for (var x = 1; x < str.length; x++) {
+        if (str[x - 1] % 2 === 0 && str[x] % 2 === 0) {
+            result.push('-', str[x]);
+        }
+        else if (str[x] % 2 === 0) {
+            result.push(str[x]);
+        }
+        else {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+
 </script>
 </body>
 </html>
